@@ -1,0 +1,81 @@
+/** Gilroy Fonts **/
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/GilroyMedium.woff2?v=1663597240') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/GilroyMedium.woff?v=1663597240') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/GilroyRegular.woff2?v=1663597241') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/GilroyRegular.woff?v=1663597241') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Acumin Fonts **/
+
+@font-face {
+  font-family: 'AcuminRegular';
+  src: url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-Regular.woff2?v=1704904215') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-Regular.woff?v=1704904215') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcuminMedium';
+  src: url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-Medium.woff2?v=1704904215') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-Medium.woff?v=1704904215') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcuminItalic';
+  src: url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-Italic.woff2?v=1704904215') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-Italic.woff?v=1704904215') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcuminMediumItalic';
+  src: url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-MediumItalic.woff2?v=1704904215') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0503/6841/3848/files/AcuminProWide-MediumItalic.woff?v=1704904215') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, li, label, p, button, a, input, div {
+  font-family: 'AcuminRegular', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+
+}
+  
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .site-header__wrapper li, 
+.site-header__wrapper button, 
+.site-header__wrapper a, 
+.site-header__wrapper li a, first-level-dropdown span, .site-nav--link-text, .card__title {
+  font-family: 'AcuminMedium', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+/** Recharge Widget **/
+
+recharge-subscription-widget {
+  max-width:100%;
+}
+
+.rc-purchase-option__sub-container {
+  background:blue !important;
+}
+
+. rc-purchase-option__label {
+  background:red !important;
+}

@@ -1,0 +1,25 @@
+{% render 'ultimate-datalayer' %}
+
+<link href="{{ 'styles.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+<script>
+  console.log('Extension Activated v3');
+</script>
+<div id="recharge-styling"
+     data-recharge-type="{{ product.metafields.custom.recharge_styling.value.label | strip | downcase }}"
+     style="display: none;">
+ </div>
+
+{% schema %}
+{
+  "name": "Head Assets",
+  "target": "head",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "developer_notes",
+      "label": "📝 Developer Notes",
+      "default": "This extension loads:\n- styles.css\n- ultimate-datalayer.liquid\n- scripts.js\n- recharge.js\n\nPush updates with `shopify app deploy`"
+    }
+  ]
+}
+{% endschema %}
