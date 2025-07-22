@@ -1,6 +1,7 @@
 {% render 'ultimate-datalayer' %}
 
 <link href="{{ 'styles.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://widget.reviews.co.uk/rating-snippet/dist.css"/>
 <script>
   console.log('Extension Activated v3');
 </script>
@@ -8,6 +9,19 @@
      data-recharge-type="{{ product.metafields.custom.recharge_styling.value.label | strip | downcase }}"
      style="display: none;">
  </div>
+ {% if collection.products.size > 0 %}
+  <script type="application/json" id="visible-products-json">
+    [
+      {% for product in collection.products %}
+        {
+          "handle": "{{ product.handle }}",
+          "sku": "{{ product.variants.first.sku | escape }}"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  </script>
+{% endif %}
+
 
 {% schema %}
 {
@@ -18,7 +32,7 @@
       "type": "textarea",
       "id": "developer_notes",
       "label": "📝 Developer Notes",
-      "default": "This extension loads:\n- styles.css\n- ultimate-datalayer.liquid\n- scripts.js\n- recharge.js\n\nPush updates with `shopify app deploy`"
+      "default": "This extension loads:\n- styles.css\n- ultimate-datalayer.liquid\n- scripts.js\n- recharge.js\n\nPush updates with shopify app deploy"
     }
   ]
 }
